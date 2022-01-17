@@ -1,0 +1,508 @@
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+li{
+    list-style: none;
+}
+/* *********************** start header ********************* */
+/* ************ start tob-nav ********* */
+.tob-nav{
+    background: #f9fafc;
+    display: block;
+    border-bottom: 1px solid #e5e9f2;
+    height: 40px;
+
+}
+
+.tob-nav ul{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tob-nav ul li{
+    cursor: pointer;
+    height: 100%;
+    padding: 0 2%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tob-nav ul li:not(:last-child){
+
+    border-left: 1px #e5e9f2 solid;
+}
+
+.tob-nav ul li:last-child{
+
+direction: ltr;
+}
+
+.tob-nav ul li a{
+    text-decoration: none;
+}
+
+.tob-nav ul li img{
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.tob-nav ul li span{
+    margin: 0 3px;
+}
+.ornage{
+    background-color: orange;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+/* ************ start midel-nav ********* */
+
+.midel-nav{
+    display: flex;
+    height: 70px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 90%;
+    width: 20%;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.searsh{
+    width: 60%;
+    height: 50%;
+    position: relative;
+}
+
+.searsh input{
+    width: 100%;
+    height: 100%;
+    border: 1px #aaa solid;
+    background-color: #eee;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+.searsh i{
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: lighter ;
+    color: #999;
+}
+
+.card{
+    height: 70%;
+    width: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card a{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.card img{
+    border-radius: 70px;
+    height: 90%;
+}
+
+/* ************ start last-nav ********* */
+ 
+
+ .last-nav{
+    background: #ffffff;
+    display: block;
+    height: 40px;
+
+}
+
+.last-nav ul{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.last-nav ul li{
+    cursor: pointer;
+    height: 100%;
+    padding: 0 2%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+
+.last-nav ul li a{
+   text-decoration: none;
+   font-weight: 900
+}
+
+.a1 {
+    border-bottom: 3px #42526e solid;
+}
+
+.a2 {
+    border-bottom: 3px #0052cc solid;
+}
+
+.a3 {
+    border-bottom: 3px orange solid;
+}
+.a4 {
+    border-bottom: 3px orangered solid;
+}
+
+.a5 {
+    border-bottom: 3px palevioletred solid;
+}
+
+.a6 {
+    border-bottom: 3px red solid;
+}
+
+.a7 {
+    border-bottom: 3px green solid;
+}
+
+.a1:hover {
+    border-bottom: 4px #42526e solid;
+}
+
+.a2:hover {
+    border-bottom: 4px #0052cc solid;
+}
+
+.a3:hover {
+    border-bottom: 4px orange solid;
+}
+.a4:hover {
+    border-bottom: 4px orangered solid;
+}
+
+.a5:hover {
+    border-bottom: 4px palevioletred solid;
+}
+
+.a6:hover {
+    border-bottom: 4px red solid;
+}
+
+.a7:hover {
+    border-bottom: 4px green solid;
+}
+
+.main-content{
+    width: 100%;
+    height: 50vh;
+}
+/* *********************** start footer ********************* */
+/* ************ start first footer  ********* */
+footer{
+    width: 100%;
+    background: #333333;
+    
+}
+.first-row{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+f-links{
+    width: 20%;
+    display: flex;
+    justify-content: space-between
+}
+footer h3{
+    color: #aaa;
+    border-bottom: #aaa .1px solid;
+    margin: 10px 20px;
+    width: 90%;
+    
+}
+
+
+.contact form{
+    background-color: #484848;
+    padding: 20px;
+    border-radius: 15px;
+    border: 0px solid;
+    position: relative;
+    height: 100px;
+
+
+}
+
+form a{
+color: #9b9b9b;
+font-size: 20px !important;
+position: absolute;
+top: 36px;
+    left: 25px;
+
+}
+
+form input:first-child{
+    width: 100%;
+    background: #e6e6e6;
+}
+
+form input:last-child{
+    width: 80px;
+    float: left;
+    background: #fff;
+}
+
+form input{
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.services ul{
+    width: auto;
+    margin: 0 20px;
+}
+
+.services li{
+    list-style: none;
+    color: white;
+    margin:20px 0;
+    font-weight: bold;
+}
+/* ************ start first footer  ********* */
+.last-row{
+    width: 90%;
+    margin: 50px auto;
+    padding: 0 0 50px 0;
+}
+
+.l-links{
+    width: 50%;
+}
+.l-links ul{
+    margin:  auto;
+    width: 90%;
+}
+
+.l-links li{
+    display: inline;
+    margin: 20px 0;
+}
+
+.l-links li:not(:first-child){
+    display: inline;
+    margin:0 20px;
+}
+
+/* facebook twitter youtube instagram linkedin snapchat */
+
+.li{
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+.facebook{
+    background: blue;
+}
+
+.twitter{
+    background: aqua;
+    padding: 7px 7px;
+
+}
+
+.youtube{
+    background: red;
+    padding: 7px 7px;
+}
+
+.instagram{
+    background: linear-gradient(to bottom right, rgb(255, 230, 0), #ff00bf); 
+    padding: 7px 7px;
+}
+
+
+.linkedin{
+    background: #0052cc;
+    padding: 7px 7px;
+}
+
+.snapchat{
+    background: yellow;
+    padding: 7px 7px;
+}
+
+.end-footer{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    background: #e6e6e6;
+    width: 100%;
+    height: 70px;
+}
+
+.text{
+    text-align: left;
+}
+
+.images{
+    width: 40%;
+}
+.images ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.images img{
+     width: 50px;
+     height: 30px;
+}
+
+@media screen and (max-width :1100px){
+
+    .first-row{
+        display: inline;
+    }
+
+    .tob-nav ul li i{
+        display: none;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact form{
+        width: 70%;
+        
+    }
+    .contact h3{
+        border-bottom: none;
+        width: 30%;
+    }
+
+    form {
+        background: #333333 !important;
+        width: 70%;
+    }
+
+    form a{
+        top: 32px;
+    left: 33%;
+    }
+    form input:first-child{
+        width: 70%;
+        float: right;
+        background: #fff;
+        height: 40px;
+    }
+
+    form input:last-child{
+        float: left;
+        height: 40px;
+
+    }
+
+    .services{
+        width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    }
+    .f-links ul{
+
+        display: none;
+    }
+
+    .f-links{
+        width: 50%;
+    }
+    .last-row {
+        width: 95%;
+        margin: 0;
+        padding: 0 0 50px 0;
+
+    }
+    .l-links{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+
+    }
+    
+    .l-links li{
+        float: left;
+        margin: 0;
+
+    }
+    .l-links h3{
+        width: 50%;
+    }
+
+    .end-footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .end-footer>div{
+margin: 10px 0;    }
+    .images{
+        width: 100%
+    }
+
+    .text{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact h3{
+        padding: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width :700px){
+    .tob-nav{
+        display: none;
+    }
+}
