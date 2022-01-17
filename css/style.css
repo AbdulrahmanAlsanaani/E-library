@@ -226,6 +226,63 @@ direction: ltr;
     width: 100%;
     height: 50vh;
 }
+/* *********************** start main ********************* */
+/* ************ start slid image  ********* */
+.container-try{
+    background: #e7e7e7;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.img-content-try{
+    width: 100%;
+    background-image: url("../images/٢٠١٦٠٥١٨_١٦١٨١٢.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: auto;
+    animation: s-1 20s ease-in-out 1s infinite alternate forwards;
+}
+
+@keyframes s-1 {
+    0%{
+        background-image: url("../images/٢٠١٦٠٥١٨_١٦١٨١٢.jpg");
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+
+    20%{
+        background-image: url("../images/٢٠١٦٠٧١٠_١٨٢٠٠٥.jpg");
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+
+    40%{
+        background-image: url("../images/٢٠١٦٠٨٠٧_١٦٣٩٢٠1.jpg");
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+
+    60%{
+        background-image: url("../images/٢٠١٦٠٨٠٧_١٦٤٠٠٣.jpg");
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+
+    80%{
+        background-image: url("../images/٢٠١٦١٠٠٤_١٠٥٦٢١.jpg");
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url("../images/٢٠١٦١٠٠٤_١٠٥٧٠٨.jpg");
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+}
+
 /* *********************** start footer ********************* */
 /* ************ start first footer  ********* */
 footer{
@@ -326,15 +383,11 @@ form input{
 
 .l-links li{
     display: inline;
-    margin: 20px 0;
+    margin: 0 2%;
 }
 
-.l-links li:not(:first-child){
-    display: inline;
-    margin:0 20px;
-}
 
-/* facebook twitter youtube instagram linkedin snapchat */
+
 
 .li{
     color: #fff;
@@ -368,7 +421,7 @@ form input{
 }
 
 .snapchat{
-    background: yellow;
+    background: rgb(247, 247, 19);
     padding: 7px 7px;
 }
 
@@ -473,7 +526,7 @@ form input{
     
     .l-links li{
         float: left;
-        margin: 0;
+        margin: 0 .2%;
 
     }
     .l-links h3{
@@ -504,5 +557,8 @@ margin: 10px 0;    }
 @media screen and (max-width :700px){
     .tob-nav{
         display: none;
+    }
+    .f-links {
+        width: 100%;
     }
 }
