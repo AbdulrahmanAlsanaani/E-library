@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Cairo:wght@200&family=Titillium+Web:wght@300&display=swap"
+        rel="stylesheet">
+
 </head>
 <!-- emoji &#123465; start in 8986 end in 129510	-->
 
@@ -18,7 +23,7 @@
         <div class="tob-nav">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="" id="login-click">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <span>ادخل لحسابك أو سجل الآن</span>
                     </a>
@@ -133,15 +138,77 @@
     <section class="main-content">
         <div class="container-try">
             <div class="img-content-try">
-
+                <p style="font-size: 20px; color: white; background: #0009 ;text-align: center ; font-weight: 900;"> القت المتبقي لعروضناايام<span id="days"></span>ساعة<span id="hours"></span>دقية<span id="minutes"></span>ثانية<span id="seconds"></span></p>
             </div>
         </div>
     </section>
+
+    <div class="model" id="model">
+        <div class="sub-modle">
+            <p id="close">&times;</p>
+            <h1>تسجيل الدخول او انشاء حساب</h1>
+            <div class="butns">
+                <div id="btn-login">
+                    <span >تسجيل الدخول</span>
+                </div>
+                <div id="btn-signup">
+                    <span >انشاء حساب</span>
+                </div>
+            </div>
+            <div class="forms-model">
+                <div class="model-login" id="model-login">
+                    <form action="" class="login-form">
+                        <input type="text" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                        <input type="password" id="password" name="" placeholder="كلمة السر" id="">
+                        <input type="submit" id="login" value="تسجيل الدخول">
+                        <a href="" class="forget">نسيت؟</a>
+                    </form>
+                </div>
+                <div class="madel-signup" id="madel-signup">
+                    <form action="" class="login-form">
+                        <div class="iput-selection">
+                            <input type="text" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value="اليمن">اليمن</option>
+                                <option value="اليمن">اليمن</option>
+                                <option value="اليمن">اليمن</option>
+                            </select>
+                        </div>
+                        <p style="padding-right: 3%">سوف نرسل لك <span style="font-weight: 900;">رمز التحقق من خلال رسالة نصية</span></p>
+                        <input type="submit" id="send" value="ارسال رقم التحقق">
+                    </form>
+                    <form action="" class="login-form">
+                        <input type="text" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                        <input type="text" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                        <input type="text" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                        <input type="text" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                        <input type="password" id="email" placeholder="البريد الاكتروني او رقم الجوال">
+                        <div class="d-ch-box">
+                                <input type="checkbox" class="ch-box" name="" id="1">
+                                <label for="1">اوافق على <a href="">الشروط والاحكام</a></label>
+                        </div>
+                        <div class="d-ch-box">
+                                <input type="checkbox" class="ch-box" name="" id="2">
+                                <label for="2">التسجيل في النشرة البريدية</label>
+                        </div>
+                        <input type="submit" id="login" value="تسجيل الدخول">
+                    </form>
+                </div>
+            </div>
+
+            <a href="" class="or">أو</a>
+            <a href="">ليس لديك حساب؟</a>
+            <div class="creat-n-acount">
+                <button>انشاء حساب جديد</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="first-row">
             <div class="contact">
                 <h3>انضم الى نشرتنا البريدية</h3>
-                <form action="">
+                <form class="supscrip" action="">
                     <input type="text" placeholder="ادخل بريدك الاكتروني" name="" id="">
                     <a href="#">
                         <i class="fa fa-lock" aria-hidden="true"></i>
@@ -265,6 +332,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
