@@ -277,11 +277,15 @@ direction: ltr;
     border-radius: 4px;
     padding-bottom: 10px;
 }
+
+.col a{
+    width: 100%
+}
 .col:first-child{
     margin-right: 200px;
 }
 
-.col>img{
+.col a>img{
     width: 80%;
     margin:0 10%;
     height: auto;
