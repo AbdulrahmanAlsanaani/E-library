@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Cairo:wght@200&family=Titillium+Web:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Cairo:wght@200&family=Tajawal:wght@500&family=Titillium+Web:wght@300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/try.css">
+
     <title>Detailes</title>
 </head>
 
@@ -136,7 +138,7 @@
     <section class="slid-content">
         <div class="container-try">
             <div class="img-content-try1">
-                <img id="img" src="./images/img-1.jpg" alt="" srcset="">
+                <img id="img" src="./images/1.jpg" alt="" srcset="">
                 <a id="prev">&#10094;</a>
                 <a id="next">&#10095;</a>
                 <div class="dots">
@@ -144,14 +146,52 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- 8888888888888888888888888888888888888888888888888888888888 -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+
+                <img src="./images/Screenshot (97).png">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./images/Screenshot (21).png">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./images/Screenshot (91).png">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./images/Screenshot (93).png">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-size" src="./images/Screenshot (97).png" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-size" src="./images/Screenshot (21).png" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-size" src="./images/Screenshot (91).png" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-size" src="./images/Screenshot (93).png" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+        </div>
+    </div>
+    <!-- 8888888888888888888888888888888888888888888888888888888888 -->
     <section class="main-content">
-        <div class="book-show">
+        <div class="book-show" onclick="openModal();currentSlide(1)">
             <img class="b-img" src="./images/Screenshot (97).png" alt="">
             <div class="s-img">
                 <img src="./images/Screenshot (97).png" alt="">
@@ -254,6 +294,7 @@
         </div>
 
     </section>
+    <script src="./js/try.js"></script>
     <script>
         var prev = document.getElementById("prev");
         var next = document.getElementById("next");
@@ -263,26 +304,26 @@
         prev.addEventListener('click', (e) => {
             e.preventDefault();
             ++count;
-            if (count > 6) {
+            if (count > 4) {
                 count = 1;
             }
             for (let i = 0; i < dots.length; i++) {
                 dots[i].style.backgroundColor = "#555555";
             }
             dots[count - 1].style.backgroundColor = "#ffffff";
-            img.src = "./images/img-" + count + ".jpg";
+            img.src = "./images/" + count + ".jpg";
         });
         next.addEventListener('click', (e) => {
             e.preventDefault();
             --count;
             if (count < 1) {
-                count = 6;
+                count = 4;
             }
             for (let i = dots.length - 1; i >= 0; i--) {
                 dots[i].style.backgroundColor = "#555555";
             }
             dots[count - 1].style.backgroundColor = "#ffffff";
-            img.src = "./images/img-" + count + ".jpg";
+            img.src = "./images/" + count + ".jpg";
 
         })
     </script>
