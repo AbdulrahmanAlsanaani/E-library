@@ -6,6 +6,8 @@ const madel_signup = document.getElementsByClassName("madel-signup1");
 let index = 1;
 next.addEventListener("click", function () {
     ++index;
+    prev.classList.remove('prev-btn');
+    prev.classList.add('next-btn');
     if (index >= steps.length) {
         index = steps.length;
         next.classList.add('prev-btn');
@@ -24,6 +26,7 @@ prev.addEventListener("click", function () {
     --index;
     next.classList.remove('prev-btn');
     if (index <= 1) {
+        prev.classList.add('prev-btn');
         index = 1;
     }
     for (let i = 0; i < steps.length; i++) {
@@ -34,7 +37,7 @@ prev.addEventListener("click", function () {
         steps[i].classList.remove("active");
         steps[i - 1].classList.remove("activepro");
     }
-    
+
 })
 /* function chstats() {
     steps.forEach((items, i) => {
