@@ -25,11 +25,16 @@
 *{
     padding: 0;
     margin: 0;
-    direction: rtl;
     /* font-family: 'Cairo', sans-serif; */
     box-sizing: border-box;
 }
+body{
+    direction: rtl;
+}
 
+.eng{
+    direction: ltr;
+}
 html{
    /*  font-family: 'Arvo', serif; */
 font-family: 'Cairo', sans-serif;
@@ -166,6 +171,19 @@ direction: ltr;
     width: 100%;
     display: flex;
     align-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+#ornage-count{
+    background-color: orange;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-right: 10px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
 }
 
 .card img{
@@ -317,7 +335,7 @@ direction: ltr;
     border-radius: 4px;
     padding-bottom: 10px;
     display: block;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .col a{
@@ -944,11 +962,11 @@ margin: 0 0 50px 0;
     display: flex;
     justify-content: space-between;
     margin: 20px auto 10px auto;
-    gap: 20px;
+    /* gap: 2%; */
 }
 
 .four-adds img{
-    width: 25%;
+    width: 24%;
 }
 
 .one-add{

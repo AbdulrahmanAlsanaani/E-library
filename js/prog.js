@@ -39,6 +39,8 @@ prev.addEventListener("click", function () {
     }
 
 })
+
+
 /* function chstats() {
     steps.forEach((items, i) => {
         if (i < index) {

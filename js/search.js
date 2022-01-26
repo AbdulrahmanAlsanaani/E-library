@@ -35,21 +35,6 @@ var col, col_a, col_a_img, col_p, col_p_img, col_bName, col_bPrice,
     col_span, col_type, col_type_span, col_div, col_div_pRALA, col_div_pCart,
     col_div_pCart_i, col_div_pStar, col_bNameTxt, col_bPriceTxt, col_spanTxt, col_typeTxt,
     col_type_spanTxt, col_div_pRALATxt, col_div_pStarTxt;
-/* col = document.createElement('div');
-col_a = document.createElement('a');
-col_a_img = document.createElement('img');
-col_p = document.createElement('p');
-col_p_img = document.createElement('img');
-col_bName = document.createElement('p');
-col_bPrice = document.createElement('p');
-col_span = document.createElement('span');
-col_type = document.createElement('p');
-col_type_span = document.createElement('span');
-col_div = document.createElement('div');
-col_div_pRALA = document.createElement('p');
-col_div_pCart = document.createElement('p');
-col_div_pCart_i = document.createElement('i');
-col_div_pStar = document.createElement('p');*/
 
 localStorage.bookNames = ['كاتلوج الحب', 'angular 2+', 'andeoid', 'algorithms', 'c++', 'لانك الله', 'adobe'];
 localStorage.bookPrice = [55, 82, 32, 17, 81, 21, 26];
@@ -93,6 +78,7 @@ for (var i = 0; i < arrBN.length; i++) {
     col_div_pCart_i.classList.add("fa");
     col_div_pCart_i.classList.add("fa-shopping-cart");
     col_div_pCart_i.classList.add("cart-ico");
+    col_div_pCart.classList.add('count-click');
     col_div_pCart.appendChild(col_div_pCart_i);
     col_div_pStarTxt = document.createTextNode("★");
     col_div_pStar.appendChild(col_div_pStarTxt);
@@ -125,9 +111,7 @@ for (var i = 0; i < arrBN.length; i++) {
 }
 searchEngin.addEventListener('input', () => {
 
-    /* alert(localStorage.bookNames);
-    alert(localStorage.bookPrice);*/
-    /* alert(arrBP.length); */
+    
     var allCol = document.getElementsByClassName('col');
     if (containerSearch.hasChildNodes()) {
         var a = containerSearch.childElementCount;
@@ -139,12 +123,7 @@ searchEngin.addEventListener('input', () => {
     }
     for (var i = 0; i < arrBN.length; i++) {
         if (arrBN[i].indexOf(searchEngin.value) >= 0) {
-            /* newEle = document.createElement('li');
-            newText = document= document.createTextNode(i + "- " + arrBN[i] + ', ' + arrBP[i] + ', ' + arrBIU[i]);
-            newEle.appendChild(newText);
-            newEle.classList.add("lists");
-            list.appendChild(newEle); */
-
+            
             /* ******************************************************************* */
             col = document.createElement('div');
             col_a = document.createElement('a');
@@ -178,6 +157,7 @@ searchEngin.addEventListener('input', () => {
             col_div_pCart_i.classList.add("fa");
             col_div_pCart_i.classList.add("fa-shopping-cart");
             col_div_pCart_i.classList.add("cart-ico");
+            col_div_pCart.classList.add('count-click');
             col_div_pCart.appendChild(col_div_pCart_i);
             col_div_pStarTxt = document.createTextNode("★");
             col_div_pStar.appendChild(col_div_pStarTxt);
@@ -206,18 +186,20 @@ searchEngin.addEventListener('input', () => {
 
 
 
-            /* col_bNameTxt= document.createTextNode(arrBN[i]);
-            col_bPriceTxt= document.createTextNode(arrBP[i]+"ر.س.");
-            col_bName.appendChild(col_bNameTxt);
-            col_bPrice.classList.add("price");
-            col_bPrice.appendChild(col_bPriceTxt);
-            col.appendChild(col_bName);
-            col.appendChild(col_bPrice);
-            col.classList.add("col");
-            containerSearch.appendChild(col); */
+            
 
         }
     }
 })
+/* var counter = 0;
+var countClick = document.getElementsByClassName("count-click");
+var ornageCount =document.getElementById("ornage-count");
+for(let i =0; i<countClick.length;i++){
+    countClick[i].addEventListener('click', (e)=>{
+        e.preventDefault();
+        counter++;
+        ornageCount.innerHTML=counter;
+    })
+}
+ */
 
-/* newText = document= document.createTextNode(); */

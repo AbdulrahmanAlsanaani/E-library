@@ -64,31 +64,43 @@ var next = document.getElementById("next");
 var img = document.getElementById("img");
 var dots = document.getElementsByClassName("dot");
 let count = 1;
+var imgsArr = ["./images/1.jpg", "./images/2.jpg", "./images/3.jpg", "./images/4.jpg"];
 prev.addEventListener('click', (e) => {
     e.preventDefault();
     ++count;
-    if (count > 4) {
+    if (count > dots.length) {
         count = 1;
     }
     for (let i = 0; i < dots.length; i++) {
         dots[i].style.backgroundColor = "#555555";
     }
     dots[count - 1].style.backgroundColor = "#ffffff";
-    img.src = "./images/" + count + ".jpg";
+    img.src = imgsArr[count - 1];
 });
 next.addEventListener('click', (e) => {
     e.preventDefault();
     --count;
     if (count < 1) {
-        count = 4;
+        count = dots.length;
     }
     for (let i = dots.length - 1; i >= 0; i--) {
         dots[i].style.backgroundColor = "#555555";
     }
     dots[count - 1].style.backgroundColor = "#ffffff";
-    img.src = "./images/" + count + ".jpg";
+    img.src = imgsArr[count - 1];
 
-})
+});
+
+for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener('click', (e) => {
+        for (let x = 0; x < dots.length; x++) {
+            dots[x].style.backgroundColor = "#555";
+        }
+        dots[i].style.backgroundColor = "#fff";
+        img.src = imgsArr[i];
+    })
+}
+
 var prev = document.getElementsByClassName("prev");
 var next = document.getElementsByClassName("next");
 var row = document.getElementsByClassName("row");
@@ -104,11 +116,11 @@ for (let i = 0; i < prev.length; i++) {
     })
     prev[i].addEventListener('click', () => {
         x += 22;
-        if (x > 64) {
-            x = 64;
+        if (x > 76) {
+            x = 76;
         }
 
-        if(i==0){
+        if (i == 0) {
             if (x > 29.2) {
                 x = 29.2;
             }
@@ -116,4 +128,19 @@ for (let i = 0; i < prev.length; i++) {
         row[i].style.transform = "translateX(" + x + "%)"
     })
 }
+var countar = 0;
+var countClick = document.getElementsByClassName("cart-ico");
+var ornageCount = document.getElementById("ornage-count");
+for (let i = 0; i < countClick.length; i++) {
+    countClick[i].addEventListener('click', (e) => {
+        e.preventDefault();
+        countar++;
+        ornageCount.innerHTML = countar;
+    })
+}
 
+var lang =document.getElementById("lang");
+var body = document.getElementsByTagName("body")[0];
+lang.addEventListener('click',()=>{
+    body.classList.toggle("eng");
+})
