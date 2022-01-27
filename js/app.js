@@ -104,6 +104,7 @@ for (let i = 0; i < dots.length; i++) {
 var prev = document.getElementsByClassName("prev");
 var next = document.getElementsByClassName("next");
 var row = document.getElementsByClassName("row");
+var colFir = document.getElementsByClassName("col")[20];
 var x = 0;
 for (let i = 0; i < prev.length; i++) {
     next[i].addEventListener('click', () => {
@@ -112,7 +113,7 @@ for (let i = 0; i < prev.length; i++) {
         if (x < 0) {
             x = 0;
         }
-        row[i].style.transform = "translateX(" + x + "%)"
+        row[i].scrollLeft += 296;
     })
     prev[i].addEventListener('click', () => {
         x += 22;
@@ -125,7 +126,7 @@ for (let i = 0; i < prev.length; i++) {
                 x = 29.2;
             }
         }
-        row[i].style.transform = "translateX(" + x + "%)"
+        row[i].scrollLeft -= 296;
     })
 }
 var countar = 0;
@@ -138,9 +139,31 @@ for (let i = 0; i < countClick.length; i++) {
         ornageCount.innerHTML = countar;
     })
 }
-
-var lang =document.getElementById("lang");
+var lang = document.getElementById("lang");
+var prevId = document.getElementById("prev");
+var nextId = document.getElementById("next");
+var searshI = document.querySelector(".searsh i");
+var supscripA = document.querySelector(".supscrip a");
+var supscripInput = document.querySelector(".supscrip input:last-child");
+var ornageCount = document.getElementById("ornage-count");
 var body = document.getElementsByTagName("body")[0];
-lang.addEventListener('click',()=>{
+var prevEng = document.getElementsByClassName("prev");
+var nextEng = document.getElementsByClassName("next");
+var taxEng = document.getElementsByClassName("tax");
+lang.addEventListener('click', () => {
     body.classList.toggle("eng");
+    nextId.classList.toggle("next-eng");
+    prevId.classList.toggle("prev-eng");
+    searshI.classList.toggle("searsh-i-eng");
+    supscripA.classList.toggle("supscrip-a-eng");
+    supscripInput.classList.toggle("supscrip-input-eng");
+    ornageCount.classList.toggle("ornage-count-eng");
+    for (let i = 0; i < prevEng.length; i++) {
+        nextEng[i].classList.toggle("next-eng");
+        prevEng[i].classList.toggle("prev-eng");
+    }
+
+    for (let i = 0; i < prevEng.length; i++) {
+        taxEng[i].classList.toggle("tax-eng");
+    }
 })
