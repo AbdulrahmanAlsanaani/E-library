@@ -77,6 +77,10 @@ li{
 header{
     font-size: 13px;
     font-weight: 900;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
 }
 .tob-nav{
     
@@ -146,6 +150,7 @@ direction: ltr;
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo{
@@ -228,7 +233,7 @@ direction: ltr;
     display: block;
     height: auto;
     overflow: auto;
-    margin-top: 10px;
+    margin: 20px 0;
 
 }
 
@@ -254,9 +259,13 @@ direction: ltr;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 15px;
-    min-width: 190px;
+    margin: 10px 15px;
+    min-width: 200px;
     font-size: 14px;
+}
+
+.row a{
+    text-decoration: none;
 }
 
 
